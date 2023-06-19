@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Podatki Akcyzowe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="title">
+        <h1 class="heading">Podatki Akcyzowe</h1>
+    </div>
+    <div class="form-group">
+        <form>
+            <input type="number" class="price" placeholder="Cena Samochodu">
+            <br>
+            <select class="select">
+                <option value="1">Samochod osobowe(do 2000 ccm)</option>
+                <option value="2">Samochod osobowe(powyżej 2000 ccm)</option>
+                <option value="3">Samochod osobowe (Elektryczne)</option>
+                <option value="4">Hybrid plug-in(do 2000 ccm)</option>
+                <option value="5">Hybrid plug-in(2000-3500 ccm)</option>
+                <option value="6">Hybrid klasyczne(do 2000 ccm)</option>
+                <option value="7">Hybrid klasyczne(2000-3500 ccm)</option>
+                <option value="8">Hybrid klasyczne(powyżej 3500 ccm)</option>
+                <option value="9">Samochod ciężarowy</option>
+            </select>
+            <br>
+            <input type="submit" value="Oblicz" class="calculateBtn"><br>
+            <input type="text" placeholder="Podatki Akcyzowe" class="tax" readonly>
+        </form>
+        <p class="taxText">Dla wybranej opcji podatek akcyzowy wynosi <span class="taxProcent"></span></p>
+    </div>
+    
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
